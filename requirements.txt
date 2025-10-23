@@ -1,0 +1,4 @@
+torch>=2.0.0
+numpy>=1.21.0
+MinkowskiEngine>=0.5.4
+scikit-learn>=1.0.0
