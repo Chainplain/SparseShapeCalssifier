@@ -32,10 +32,14 @@ def generate_cube(num_points: int = 1000, side_length: float = 2.0) -> np.ndarra
     points = []
     half_side = side_length / 2.0
     points_per_face = num_points // 6
+    remainder = num_points - (points_per_face * 6)
 
     # Generate points on each face
     for face in range(6):
-        for _ in range(points_per_face):
+        # Add extra point to first faces if there's a remainder
+        face_points = points_per_face + (1 if face < remainder else 0)
+        
+        for _ in range(face_points):
             u = np.random.uniform(-half_side, half_side)
             v = np.random.uniform(-half_side, half_side)
 
