@@ -31,3 +31,5 @@ Special thanks to the open-source projects that make this possible:
 - **spconv** — efficient sparse 3D convolution ops  
 - **NumPy** — numerical computing utilities  
 - **matplotlib** — 3D plotting and visualization  
+
+![Demo Grid Visualization](demo_grid.png)
