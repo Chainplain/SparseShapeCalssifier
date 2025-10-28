@@ -2,6 +2,7 @@
 
 Classifies 3D shapes (sphere, cube, cylinder, cone, pyramid) from point clouds using sparse 3D convolutions.
 
+
 ## Pipeline
 1. **Sample Points**  
    Generate noisy surface point clouds for 5 shapes with optional rotation + dropout.
